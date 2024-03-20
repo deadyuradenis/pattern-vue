@@ -1,0 +1,22 @@
+.link {
+  color: cl(text);
+  fill: currentColor;
+
+  text-decoration: none;
+
+  transition: color $trn ease;
+
+  &:hover {
+    color: cl(text-hover);
+  }
+
+  @media (hover: hover) {
+    &:active {
+      color: cl(text-active);
+    }
+  }
+
+  &--active {
+    color: cl(text-active);
+  }
+}

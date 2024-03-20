@@ -1,0 +1,12 @@
+// Colors
+@function SplitHsl($hsla) {
+    @return hue($hsla), saturation($hsla), lightness($hsla);
+}
+
+@function clr($color, $opacity: false) {
+    @if $opacity {
+        @return hsla(var(--color-#{unquote($color)}--hsl), $opacity);
+    } @else {
+        @return var(--color-#{unquote($color)});
+    }
+}

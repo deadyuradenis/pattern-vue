@@ -1,0 +1,22 @@
+// Mixin
+
+@mixin font($name, $fileName, $weight) {
+    @font-face {
+        font-family: $name;
+        src: local("#{$name}"),
+            url("@fonts/#{$name}/#{$fileName}.woff2") format("woff2"),
+            url("@fonts/#{$name}/#{$fileName}.woff") format("woff"),
+            url('@fonts/#{$name}/#{$fileName}.ttf') format('ttf');
+        font-weight: $weight;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+// Fonts
+
+@include font("Fira Code", "FiraCode-Light", 300);
+@include font("Fira Code", "FiraCode-Regular", 400);
+@include font("Fira Code", "FiraCode-Medium", 500);
+@include font("Fira Code", "FiraCode-Semibold", 600);
+@include font("Fira Code", "FiraCode-Bold", 700);

@@ -1,0 +1,368 @@
+$base: '.ui-input';
+
+.ui-input {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  width: 100%;
+  flex-grow: 1;
+
+  color: cl(text-active);
+  fill: currentColor;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 132%;
+
+  transition:
+    color $trn ease,
+    fill $trn ease,
+    opacity $trn ease;
+
+  &__title {
+    color: cl(text);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 132%;
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 14px;
+      line-height: 140%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @media only screen and (max-width: $bp-lg) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+
+    min-height: 40px;
+
+    gap: 8px;
+    padding: 8px 14px;
+
+    border-radius: 8px;
+    border: 1px solid cl(secondary);
+    background-color: cl(background-dark);
+    box-shadow: 0 0 0 1px cl(secondary, 0.4);
+
+    transition:
+      border-color $trn ease,
+      background-color $trn ease,
+      box-shadow $trn ease;
+
+    &:hover {
+      border-color: cl(secondary-hover);
+      box-shadow: 0 0 0 1px cl(secondary-hover, 0.5);
+    }
+  }
+
+  &__native {
+    outline: none;
+
+    width: 100%;
+    flex-grow: 1;
+
+    padding: 0;
+
+    color: inherit;
+
+    border: 0;
+    background-color: transparent;
+
+    font-size: inherit;
+    line-height: inherit;
+    text-overflow: ellipsis;
+
+    resize: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
+
+    &::placeholder {
+      opacity: 0.4 !important;
+      color: inherit;
+      transition: color $trn ease;
+    }
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+
+    &--left {
+      order: -1;
+    }
+
+    &--right {
+      order: 1;
+    }
+  }
+
+  &__status {
+    display: grid;
+    grid-template-rows: 1fr;
+
+    margin-top: 8px;
+
+    color: inherit;
+
+    overflow: hidden;
+
+    font-size: 14px;
+    line-height: 140%;
+
+    span {
+      min-height: 0;
+    }
+  }
+
+  // Sizes:
+
+  &--size-md {
+    font-size: 14px;
+    line-height: 135%;
+
+    #{$base}__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &--size-lg {
+    font-size: 32px;
+
+    @media only screen and (max-width: $bp-xl) {
+      font-size: 26px;
+    }
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 18px;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      font-size: 14px;
+    }
+
+    #{$base}__wrapper {
+      gap: 12px;
+
+      min-height: 78px;
+
+      padding: 20px;
+
+      border-radius: 20px;
+
+      @media only screen and (max-width: $bp-lg) {
+        gap: 10px;
+
+        min-height: 64px;
+
+        padding: 16px 20px;
+
+        border-radius: 16px;
+      }
+
+      @media only screen and (max-width: $bp-md) {
+        gap: 8px;
+
+        min-height: 50px;
+
+        padding: 12px 20px;
+
+        border-radius: 10px;
+      }
+    }
+
+    #{$base}__icon {
+      width: 36px;
+      height: 36px;
+
+      @media only screen and (max-width: $bp-xl) {
+        width: 32px;
+        height: 32px;
+      }
+
+      @media only screen and (max-width: $bp-lg) {
+        width: 28px;
+        height: 28px;
+      }
+
+      @media only screen and (max-width: $bp-md) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  // Types:
+
+  &--type-textarea {
+    #{$base}__wrapper {
+      align-items: flex-start;
+    }
+
+    #{$base}__native {
+      min-height: 110px;
+    }
+
+    // Sizes:
+
+    &#{$base}--size-md #{$base}__wrapper {
+      padding: 8px 10px;
+    }
+
+    &#{$base}--size-lg #{$base}__wrapper {
+      padding: 20px;
+
+      @media only screen and (max-width: $bp-lg) {
+        padding: 8px 10px;
+      }
+    }
+  }
+
+  // Themes:
+
+  // &--theme-light{
+  //     color: #fff;
+  //     fill: #fff;
+  // }
+
+  // &--theme-light &__wrapper {
+  //     border-color: #fff;
+  // }
+
+  // &:hover#{&}--theme-light &__wrapper {
+  //     border-color: #C5DDFF;
+  //     background-color: hsla(215, 100%, 892%, 0.05);
+  // }
+
+  // &--is-filled#{&}--theme-light &__wrapper {
+  //     border-color: #C5DDFF;
+  //     background-color: hsla(215, 100%, 892%, 0.12);
+  // }
+
+  // &--is-focused#{&}--theme-light &__wrapper {
+  //     border-color: #aecdf9;
+  //     background-color: hsla(215, 100%, 892%, 0.2);
+  // }
+
+  // Actions:
+
+  // Disabled:
+
+  &[disabled],
+  &--is-disabled {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  // Filled:
+
+  &--is-filled {
+    #{$base}__wrapper {
+      border-color: cl(secondary-hover);
+      box-shadow: 0 0 0 1px cl(secondary-active, 0.5);
+
+      &:hover {
+        border-color: cl(secondary-active);
+        box-shadow: 0 0 0 1px cl(secondary-hover, 0.6);
+      }
+    }
+  }
+
+  // Focused:
+
+  &--is-focused {
+    #{$base}__wrapper {
+      border-color: cl(secondary-active);
+      box-shadow: 0 0 0 1px cl(secondary-active, 0.7);
+    }
+  }
+
+  // Error:
+
+  &--is-error {
+    color: cl(error);
+
+    #{$base}__wrapper {
+      border-color: cl(error);
+    }
+
+    #{$base}__native::placeholder {
+      color: cl(error);
+    }
+  }
+
+  // Success:
+
+  &--is-success {
+    #{$base}__status {
+        color: cl(success);
+    }
+
+    #{$base}__wrapper {
+      border-color: cl(success);
+    }
+
+    #{$base}__native::placeholder {
+      color: cl(success);
+    }
+  }
+
+  // Pending:
+
+  &--is-pending {
+    #{$base}__status{
+      color: cl(pending);
+    }
+
+    #{$base}__wrapper {
+      border-color: cl(pending);
+    }
+
+    #{$base}__native::placeholder {
+      color: cl(pending);
+    }
+  }
+}
+
+// Animations:
+
+.ui-input-status-enter-active,
+.ui-input-status-leave-active {
+  transition:
+          transform .4s ease,
+          grid-template-rows .4s ease,
+          opacity 0.3s ease,
+          margin-top .4s ease;
+}
+
+.ui-input-status-enter-from,
+.ui-input-status-leave-to {
+  grid-template-rows: 0fr;
+
+  margin-top: 0;
+
+  transform: translateY(-6px);
+  opacity: 0;
+}

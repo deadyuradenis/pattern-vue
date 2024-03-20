@@ -1,0 +1,68 @@
+.ui-code {
+  font-weight: 400;
+  font-size: inherit;
+  line-height: inherit;
+
+  p {
+    margin: 0 0 0 3ch;
+
+    font-weight: 400;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  &-space {
+    display: inline-block;
+
+    width: 4ch;
+  }
+
+  &-violet {
+    color: cl(text-violet);
+    fill: currentColor;
+  }
+
+  &-blue {
+    color: cl(text-blue);
+    fill: currentColor;
+  }
+
+  &-orange {
+    color: cl(text-orange);
+    fill: currentColor;
+  }
+
+  &-green {
+    color: cl(text-green);
+    fill: currentColor;
+  }
+
+  &-input {
+    display: inline-block;
+
+    min-width: 1ch;
+    width: auto;
+    max-width: 380px;
+
+    padding: 0;
+
+    color: inherit;
+
+    font-size: 18px;
+    line-height: 150%;
+    text-overflow: ellipsis;
+
+    background: none;
+    outline: 0;
+    border: 0;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-lg) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      font-size: 14px;
+    }
+  }
+}

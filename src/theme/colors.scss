@@ -1,0 +1,169 @@
+$themes : (
+  default : (
+    "main" : hsl(233, 76%, 62%),
+    "main-medium" : hsl(233, 57%, 55%),
+
+    "secondary" : hsl(210, 24%, 50%),
+    "secondary-hover" : hsl(210, 34%, 63%),
+    "secondary-active" : hsl(210, 100%, 93%),
+    "secondary-dark" : hsl(210, 24%, 32%),
+
+    "background" : hsl(208, 95%, 8%),
+    "background-black" : hsl(208, 91%, 5%),
+    "background-dark" : hsl(208, 100%, 7%),
+    "background-medium" : hsl(208, 80%, 8%),
+    "background-light" : hsl(208, 88%, 8%),
+
+    "button" : hsl(210, 35%, 17%),
+    "button-hover" : hsl(210, 38%, 18%),
+    "button-active" : hsl(210, 42%, 19%),
+    "button-light" : hsl(210, 56%, 21%),
+    "button-light-hover" : hsl(210, 62%, 22%),
+    "button-light-active" : hsl(210, 70%, 23%),
+
+    "border" : hsl(211, 34%, 18%),
+
+    "text" : hsl(210, 24%, 50%),
+    "text-hover" : hsl(210, 34%, 63%),
+    "text-active" : hsl(210, 100%, 93%),
+    "text-dark" : hsl(210, 24%, 32%),
+    "text-medium" : hsl(210, 100%, 72%),
+    "text-light" : hsl(210, 100%, 82%),
+    "text-orange" : hsl(26, 99%, 68%),
+    "text-blue" : hsl(233, 76%, 62%),
+    "text-violet" : hsl(284, 57%, 71%),
+    "text-green" : hsl(162, 66%, 56%),
+
+    "error" : hsl(7, 89%, 46%),
+    "error-dark" : hsl(7, 89%, 46%),
+    "error-medium" : hsl(7, 89%, 46%),
+    "error-light" : hsl(7, 89%, 46%),
+
+    "success" : hsl(162, 66%, 56%),
+    "success-active" : hsl(162, 66%, 56%),
+    "success-dark" : hsl(162, 66%, 56%),
+    "success-medium" : hsl(162, 66%, 56%),
+    "success-light" : hsl(162, 66%, 56%),
+
+    "pending" : hsl(26, 99%, 68%),
+    "pending-active" : hsl(26, 99%, 68%),
+    "pending-dark" : hsl(26, 99%, 68%),
+    "pending-medium" : hsl(26, 99%, 68%),
+    "pending-light" : hsl(26, 99%, 68%),
+    ),
+  dark : (
+    "main" : hsl(233, 8%, 75%),
+    "main-medium" : hsl(233, 2%, 55%),
+
+    "secondary" : hsl(210, 4%, 50%),
+    "secondary-hover" : hsl(210, 14%, 63%),
+    "secondary-active" : hsl(210, 100%, 93%),
+    "secondary-dark" : hsl(210, 4%, 32%),
+
+    "background" : hsl(214, 19%, 7%),
+    "background-black" : hsl(214, 19%, 4%),
+    "background-dark" : hsl(214, 25%, 6%),
+    "background-medium" : hsl(208, 5%, 8%),
+    "background-light" : hsl(208, 13%, 8%),
+
+    "button" : hsl(216, 14%, 14%),
+    "button-hover" : hsl(216, 17%, 15%),
+    "button-active" : hsl(216, 21%, 16%),
+    "button-light" : hsl(216, 14%, 26%),
+    "button-light-hover" : hsl(216, 17%, 28%),
+    "button-light-active" : hsl(216, 21%, 30%),
+
+    "border" : hsl(216, 14%, 14%),
+
+    "text" : hsl(210, 15%, 56%),
+    "text-hover" : hsl(210, 25%, 69%),
+    "text-active" : hsl(210, 100%, 93%),
+    "text-dark" : hsl(210, 4%, 32%),
+    "text-medium" : hsl(210, 100%, 72%),
+    "text-light" : hsl(210, 100%, 82%),
+    "text-orange" : hsl(22, 100%, 58%),
+    "text-blue" : hsl(233, 76%, 62%),
+    "text-violet" : hsl(284, 57%, 71%),
+    "text-green" : hsl(162, 66%, 56%),
+
+    "error" : hsl(1, 69%, 53%),
+    "error-dark" : hsl(1, 69%, 53%),
+    "error-medium" : hsl(1, 69%, 53%),
+    "error-light" : hsl(1, 69%, 53%),
+
+    "success" : hsl(128, 49%, 49%),
+    "success-active" : hsl(128, 49%, 49%),
+    "success-dark" : hsl(128, 49%, 49%),
+    "success-medium" : hsl(128, 49%, 49%),
+    "success-light" : hsl(128, 49%, 49%),
+
+    "pending" : hsl(22, 100%, 58%),
+    "pending-active" : hsl(22, 100%, 58%),
+    "pending-dark" : hsl(22, 100%, 58%),
+    "pending-medium" : hsl(22, 100%, 58%),
+    "pending-light" : hsl(22, 100%, 58%),
+),
+  gray : (
+    "main" : hsl(233, 76%, 62%),
+    "main-medium" : hsl(233, 57%, 55%),
+
+    "secondary" : hsl(210, 24%, 50%),
+    "secondary-hover" : hsl(210, 34%, 63%),
+    "secondary-active" : hsl(210, 100%, 93%),
+    "secondary-dark" : hsl(210, 24%, 32%),
+
+    "background" : hsl(208, 95%, 8%),
+    "background-black" : hsl(208, 91%, 5%),
+    "background-dark" : hsl(208, 100%, 7%),
+    "background-medium" : hsl(208, 80%, 8%),
+    "background-light" : hsl(208, 88%, 8%),
+
+    "button" : hsl(210, 35%, 17%),
+    "button-hover" : hsl(210, 38%, 18%),
+    "button-active" : hsl(210, 42%, 19%),
+    "button-light" : hsl(210, 56%, 21%),
+    "button-light-hover" : hsl(210, 62%, 22%),
+    "button-light-active" : hsl(210, 70%, 23%),
+
+    "border" : hsl(211, 34%, 18%),
+
+    "text" : hsl(210, 24%, 50%),
+    "text-hover" : hsl(210, 34%, 63%),
+    "text-active" : hsl(210, 100%, 93%),
+    "text-dark" : hsl(210, 24%, 32%),
+    "text-medium" : hsl(210, 100%, 72%),
+    "text-light" : hsl(210, 100%, 82%),
+    "text-orange" : hsl(26, 99%, 68%),
+    "text-blue" : hsl(233, 76%, 62%),
+    "text-violet" : hsl(284, 57%, 71%),
+    "text-green" : hsl(162, 66%, 56%),
+
+    "error" : hsl(7, 89%, 46%),
+    "error-dark" : hsl(7, 89%, 46%),
+    "error-medium" : hsl(7, 89%, 46%),
+    "error-light" : hsl(7, 89%, 46%),
+
+    "success" : hsl(162, 66%, 56%),
+    "success-active" : hsl(162, 66%, 56%),
+    "success-dark" : hsl(162, 66%, 56%),
+    "success-medium" : hsl(162, 66%, 56%),
+    "success-light" : hsl(162, 66%, 56%),
+
+    "pending" : hsl(26, 99%, 68%),
+    "pending-active" : hsl(26, 99%, 68%),
+    "pending-dark" : hsl(26, 99%, 68%),
+    "pending-medium" : hsl(26, 99%, 68%),
+    "pending-light" : hsl(26, 99%, 68%),
+  ),
+);
+
+html {
+  @each $theme, $colors in $themes {
+    &[data-color-theme=#{$theme}] {
+      @each $key, $value in $colors {
+        --color-#{$key} : #{$value};
+        --color-#{$key}--hsl : #{SplitHsl($value)};
+      }
+    }
+  }
+}
