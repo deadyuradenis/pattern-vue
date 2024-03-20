@@ -1,4 +1,4 @@
-# Pattern-bye
+# Pattern-vue
 
 ***
 ## Особенности проекта
